@@ -6,7 +6,7 @@ public class Demo {
 		
 		Boolean b = false;
 		
-		
+		int i = 0;
 		
 		
 
