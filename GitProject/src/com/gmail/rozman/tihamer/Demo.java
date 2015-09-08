@@ -6,9 +6,8 @@ public class Demo {
 		
 		Boolean b = false;
 		
-		if(b) {
-			
-		}
+		
+		
 		
 
 	}
