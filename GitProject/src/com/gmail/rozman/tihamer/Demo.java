@@ -8,6 +8,10 @@ public class Demo {
 		
 		int i = 0;
 		
+		if(b) {
+			b = false;
+		}
+		
 		
 
 	}
