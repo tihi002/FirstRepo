@@ -3,19 +3,33 @@ package com.gmail.rozman.tihamer;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+
 import java.awt.GridBagLayout;
+
 import javax.swing.JLabel;
+
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import java.awt.Font;
+
 import javax.swing.JTextField;
 import javax.swing.JButton;
+
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.SessionFactoryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.sql.ordering.antlr.Factory;
+
 
 public class MainWindow {
 
 	private JFrame frame;
 	private JTextField textField;
 	private JTextField textField_1;
+	
+	private static final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
 	/**
 	 * Launch the application.
@@ -72,5 +86,11 @@ public class MainWindow {
 		JButton btnSubmit = new JButton("Submit");
 		btnSubmit.setBounds(207, 25, 86, 62);
 		frame.getContentPane().add(btnSubmit);
+		
+		
+		
+		
+		
+		
 	}
 }
